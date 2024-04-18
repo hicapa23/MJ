@@ -16,7 +16,7 @@ public class KonvertionFehler {
         String mein_GeburtstagZeichenkette = String.valueOf(mein_Geburtstag);
         String error = mein_GeburtstagZeichenkette + " " + mein_Geburtsmonat;
 
-        System.out.println("Fehler der Konvertion??\n" + error);
+        System.out.println("\n\nFehler der Konvertion??\n\n\n" + error + "\n\n");
 
     }
 
