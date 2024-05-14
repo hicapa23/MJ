@@ -5,14 +5,15 @@ import java.util.Scanner;
 public class ZahlenUbersetzer2 {
 
     public int romicheZahlZuDezimal(String romichezahl) {
-        int dezimal = 0; //
-        int letzterWert = 0; //
+
+        var dezimal = 0;
+        var letzterWert = 0;
 
         for (int i = romichezahl.length() - 1; i >= 0; i--) {
 
-            char aktuellesChar = romichezahl.charAt(i);
+            var aktuellesChar = romichezahl.charAt(i);
 
-            int numerischerWert = romicheZahlCharToDezimal(aktuellesChar);
+            var numerischerWert = romicheZahlCharToDezimal(aktuellesChar);
 
             if (numerischerWert < letzterWert) {
                 dezimal -= numerischerWert;
@@ -26,38 +27,32 @@ public class ZahlenUbersetzer2 {
         return dezimal;
     }
 
-    private int romicheZahlCharToDezimal(char c) {
-        switch (c) {
-            case 'I':
-                return 1;
-            case 'V':
-                return 5;
-            case 'X':
-                return 10;
-            case 'L':
-                return 50;
-            case 'C':
-                return 100;
-            case 'D':
-                return 500;
-            case 'M':
-                return 1000;
-            default:
-                throw new RuntimeException("Ungültiges Zeichen: " + c);
-        }
+    private int romicheZahlCharToDezimal(char aktuellesChar) {
+        return switch (aktuellesChar) {
+            case 'I' -> 1;
+            case 'V' -> 5;
+            case 'X' -> 10;
+            case 'L' -> 50;
+            case 'C' -> 100;
+            case 'D' -> 500;
+            case 'M' -> 1000;
+            default -> throw new RuntimeException("Ungültiges Zeichen: " + aktuellesChar);
+        };
     }
 
     public static void main(String[] args) {
-        ZahlenUbersetzer2 umwandler = new ZahlenUbersetzer2();
-        Scanner scanner = new Scanner(System.in);
+
+        var umwandler = new ZahlenUbersetzer2();
+        var scanner = new Scanner(System.in);
 
         System.out.println("Geben Sie eine römische Zahl bitte ein: ");
         var romischeZiffer = scanner.nextLine();
 
-        int dezimalZahl = umwandler.romicheZahlZuDezimal(romischeZiffer);
+        var dezimalZahl = umwandler.romicheZahlZuDezimal(romischeZiffer);
 
         System.out.println("Die roemische Zahl " + romischeZiffer + " ist in dezimal gleich: " + dezimalZahl);
 
         scanner.close();
+
     }
 }

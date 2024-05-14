@@ -12,7 +12,8 @@ import java.util.Map;
 public class QuizGenerator {
     public static void main(String[] args) {
         Map<String, String> länderUndHauptstädte = new HashMap<>();
-        
+
+
 
         länderUndHauptstädte.put("Aegypten", "Kairo");
         länderUndHauptstädte.put("Argelien", "Algier");
@@ -65,13 +66,13 @@ public class QuizGenerator {
         länderUndHauptstädte.put("Tansania", "Dodoma");
         länderUndHauptstädte.put("Togo", "Lomé");
 
-    
 
         for (int fragenBogen = 1; fragenBogen <= 35; fragenBogen++) {
             List<String> länder = new ArrayList<>(länderUndHauptstädte.keySet());
             Collections.shuffle(länder);
 
             try (FileWriter fragenBogenWriter = new FileWriter("Fragenbogen_" + fragenBogen + ".txt");
+
                     FileWriter schlüsselAntwortWriter = new FileWriter("Schlussel_Antworten_" + fragenBogen + ".txt")) {
 
                 for (int zahlFrage = 1; zahlFrage <= 50; zahlFrage++) {
@@ -98,7 +99,7 @@ public class QuizGenerator {
                             .write(zahlFrage + ". " + "ABCD".charAt(optionen.indexOf(richtigeHauptstad)) + "\n");
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                System.out.println("Fehler aufgetreten" + e.getMessage());
             }
         }
     }

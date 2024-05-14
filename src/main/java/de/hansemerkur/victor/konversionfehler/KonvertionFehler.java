@@ -11,12 +11,12 @@ public class KonvertionFehler {
          * int error = Geburtsmonat + Geburtstag ;
          */
 
-        String mein_Geburtsmonat = "August";
-        int mein_Geburtstag = 3;
-        String mein_GeburtstagZeichenkette = String.valueOf(mein_Geburtstag);
-        String error = mein_GeburtstagZeichenkette + " " + mein_Geburtsmonat;
+        var mein_Geburtsmonat = "August";
+        var mein_Geburtstag = 3;
+        var mein_GeburtstagZeichenkette = String.valueOf(mein_Geburtstag);
+        var error = mein_GeburtstagZeichenkette + " " + mein_Geburtsmonat;
 
-        System.out.println("\n\nFehler der Konvertion??\n\n\n" + error + "\n\n");
+        System.out.println("\n\nFehler der Konvertion??\n\n" + error + "\n");
 
     }
 

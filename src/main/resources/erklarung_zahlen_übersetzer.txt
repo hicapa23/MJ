@@ -1,0 +1,18 @@
+Beispiel mit  1525:
+
+Die Methode konvertionZuRomischenZahlen erstellt 4 Arrays mit den moeglichen Fällen für Tausende, Hunderte,
+Zehnte und Einheiten... Dann werde Variable für die Abspeicherung der Indexes der schon obengannanten 
+Arrays erschafft. Als Nächstes wird die Usereingabe mehrmals dividiert, erstmal durch 1000 damit, falls die 
+Usereingabe größer als 1000 ist wird die 1 oder 2 oder was auch immer, der gegebene Fall ist, werden die 
+000 weggenomen und dann hätten wir unseren ersten ersten GEGENSTÜCK als romiche Zahl, so wird auch durch 
+100 und 10 dividiert,  und die nächten kleinere nummer auch eins zu eins angenommen und für unseren Array 
+als index verwenden. Am Ende krigen wir durch Konkatenation, die passende Komnbination, die unsere 
+Übersetzung von arabischen Zahlen zu römischen zahlen stimmt.
+
+
+
+1525 \ 1000 = 1525    (1)   1525 % 1000 = 525 
+525 \ 100 = 5.25      (5)   525 % 100 = 25
+25 \ 10 = 2.5     (2)  0.525 % 10 = 5
+5
+tausende[1] + hunderter[5] + zehner[2] + einheiten[0]; == MDXXV

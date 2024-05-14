@@ -8,14 +8,14 @@ public class TextDrucker {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
 
-        int minRamdon = 1930;
-        int maxRamdon = 1950;
+        var minRamdon = 1930;
+        var maxRamdon = 1950;
 
-        int numRamdonGenerator = random.nextInt(maxRamdon - minRamdon + 1) + minRamdon;
+        var numRamdonGenerator = random.nextInt(maxRamdon - minRamdon + 1) + minRamdon;
 
-        String redeMitOma = "";
+        var  redeMitOma = "";
 
-        int flascheMenge = 99;
+        var flascheMenge = 99;
 
         while (flascheMenge > 0) {
 

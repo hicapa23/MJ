@@ -1,0 +1,14 @@
+Beim Übersetzer2 haben wir 2 Methoden, die zweite Methode "romicheZahlCharToDezimal" enthält ein
+Switch, die die mehrere zeichen annimmt, eins von jeder Iteracion der Schleife, die in der ersten Methode
+"romicheZahlZuDezimal" definiert ist.
+
+Bei römischen Ziffern gibt es Ausnahmen, einige davon sind:
+
+-Die römischen Zahlen dürfen nicht mehr als dreimal wiederholt werden
+-wenn gleiche Buchstaben hinzugefügt werden, werden sie addiert
+-wenn es sich um eine kleinere Zahl handelt, die Vorderseite einer größeren Zahl steht, wird dann diese kleinere Zahl subtrahiert, bekommt man
+zum Beispiel: 9, 19, 49, 59, 99, 149, 199, 499, 999, 1999 usw.
+
+Dann haben wir auch Variablen zum Speichern des aktuellen Werts, der in der nächsten Iteration als letzter-Wert behandelt wird, und eine zum Addieren
+der Werte oder zum Abziehen, falls eine Ausnahme ist. Mit der Methode charAt können wir das
+String Buchstabe für Buchstabe durch die Iteration, als wäre es ein Array auseinandernehmen.

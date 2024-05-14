@@ -32,7 +32,7 @@ public class ZahlenUbersetzer {
 
         int indexEinheiten, indexZehner, indexHunderter, indexTausende;
 
-        indexTausende = zahl / 1000;
+        indexTausende = zahl / 1000;   
         zahl = zahl % 1000;
         indexHunderter = zahl / 100;
         zahl = zahl % 100;
