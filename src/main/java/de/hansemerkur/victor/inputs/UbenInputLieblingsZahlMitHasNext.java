@@ -14,7 +14,7 @@ public class UbenInputLieblingsZahlMitHasNext {
             var scanner = new Scanner(System.in);
             System.out.println("\nWelche ist Ihre Lieblingszahl?");
 
-            int userLieblingszahl = 0;
+            int userLieblingszahl;
 
 
             if (scanner.hasNextInt()) {

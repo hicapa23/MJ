@@ -4,7 +4,7 @@ package de.hansemerkur.victor.basichekontrollstrukturen;
 import java.util.Scanner;
 
 
-/* Version von OhTannenBaum2 MIT STATISCHEN METODEN, dieses Beispiel ist nutzlich, um den Unterschied zwischen die Modifier und auch die Statiche und
+/* Version von OhTannenBaum2 MIT STATISCHEN METHODEN, dieses Beispiel ist nutzlich, um den Unterschied zwischen die Modifier und auch die Statiche und
  * nicht Statiche statement zu verstehen*/
 
 
@@ -13,7 +13,7 @@ public class OhTannenBaum1 {
     private static int eingabeDesBenutzer;
     private static int langeDerBaumkrones;
 
-    private static void baumkrone() {
+    private static void printKrone() {
         var scanner = new Scanner(System.in);
 
         System.out.print("Geben Sie bitte die Laenge der Baumkrone: ");
@@ -34,7 +34,7 @@ public class OhTannenBaum1 {
         scanner.close();
     }
 
-    private static void stammDesBaums() {
+    private static void printStamm() {
 
         var breiteDesBaumstamm = (eingabeDesBenutzer * 2 - 1) / 3;
         var hochDesBaumstam = eingabeDesBenutzer / 3;
@@ -61,8 +61,8 @@ public class OhTannenBaum1 {
     }
 
     public static void main(String[] args) {
-        baumkrone();
-        stammDesBaums();
+        printKrone();
+        printStamm();
     }
 
 }

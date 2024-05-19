@@ -28,6 +28,7 @@ public class OhTannenBaum2 {
         }
 
         scanner.close();
+
 /*Ab hier wird die BaumKrone erstellt und beginnt die Logik, die den Baumstammt erzeugt*/
 
         var breiteDesBaumstamm = (this.eingabeDesBenutzer * 2 - 1) / 3;
