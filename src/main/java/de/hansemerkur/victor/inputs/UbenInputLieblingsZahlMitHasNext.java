@@ -3,9 +3,6 @@ package de.hansemerkur.victor.inputs;
 
 import java.util.Scanner;
 
-
-
-
 public class UbenInputLieblingsZahlMitHasNext {
     public static void main(String[] args) {
         boolean bedigung = true;

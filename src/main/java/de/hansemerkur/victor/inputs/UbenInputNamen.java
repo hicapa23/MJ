@@ -3,7 +3,6 @@ package de.hansemerkur.victor.inputs;
 
 import java.util.Scanner;
 
-/*  Vollständige Namensansage. Schreiben Sie ein Programm, das nach dem Vornamen einer Person fragt, dann nach dem mittleren und dann nach dem Nachnamen. Schließlich soll es die Person mit ihrem vollen Namen begrüßen.*/
 
 public class UbenInputNamen {
     public static void main(String[] args) {
